@@ -386,7 +386,6 @@ justify-content: space-around;
     position: relative;
     overflow: hidden;
 }
-
 #nav-droite, #nav-gauche{
     position: absolute;
     bottom: 50%;
@@ -394,24 +393,20 @@ justify-content: space-around;
     color: black;
     font-size: 2em;
 }
-
 #nav-droite{
     right: 20px;
 }
 #nav-gauche{
     left: 20px;
 }
-
 .elements{
     display: flex;
     transition: 1s linear;
 }
-
 .element{
     flex: 1 0 100%;
     position: relative;
 }
-
 .element > img{
     width: 100%;
 }
