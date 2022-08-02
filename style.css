@@ -25,8 +25,11 @@ body {
 .mt-2{
   margin-bottom:50px;
 }
+.mt-3{
+  margin-top: 20px;
+}
 .mb-1{
-  margin-bottom:10px;
+  margin-bottom:20px;
 }
 .mt-s{
     margin-right: 15%;
@@ -113,7 +116,7 @@ body {
 }
 
 .lh3{line-height: 3em;}
-.smallsize{font-size:x-small}
+.smallsize{font-size:small}
 .size0{
   font-size:larger;
 }
@@ -171,8 +174,8 @@ body {
   .header {
     background-color: #fff;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-    position: fixed;
     width: 100%;
+    position: fixed;
     z-index: 3;
     margin:auto;
     font-weight: bold;
@@ -261,7 +264,7 @@ body {
   .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
   }
-  @media (min-width: 1024px) {
+  @media (min-width: 1100px) {
     .header li {
       float: left;
     }
@@ -305,10 +308,20 @@ body {
   background-size: 60%;
   background-blend-mode: multiply;
  }
+ .bloc_vec:hover{
+  background: rgb(128, 192, 155) url(resources/Vector.jpg) no-repeat center center ;
+  background-size: 60%;
+  background-blend-mode: multiply;
+ }
  .bloc_vec2{
   width: 400px;
   height:400px;
   background: rgb(240, 240, 240) url(resources/Vector-1.jpg) no-repeat center center;
+  background-size: 60%;
+  background-blend-mode: multiply;
+ }
+ .bloc_vec2:hover{
+  background: rgb(150, 203, 209) url(resources/Vector-1.jpg) no-repeat center center ;
   background-size: 60%;
   background-blend-mode: multiply;
  }
@@ -351,7 +364,7 @@ background-size: cover;
     border: solid #565E65;
     border-radius:25px ;
     text-align: center;
-    height:330px;    
+    height:330x;    
 }
 .taille{
   width:40px;
@@ -373,15 +386,38 @@ justify-content: space-around;
 .logo1 {background-image: url(resources/eco.jpg) ;  }
 .logo2{ background-image: url(resources/resp.jpg) ;  }
 .logo3{ background-image: url(resources/assist.jpg) ;  }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1100px) {
     .bloc-sm-100{
       width: 100%;
     }
     .colonne-resp{
       display: block;
   }
+    .respcenter{
+      justify-content: center;
+    }
+    .respcenter2{
+      padding: 0px;
+    }
+    .resptxtcent{
+      text-align: center;
+    }
+    .respmargauto{
+      margin:auto;
+    }
+    .respsize{
+      width:250px;
+      height:250px;
+    }
+    .hauteuresp{
+      height:fit-content;
+    }
   }
-
+  @media screen and (max-width: 767px) {
+    .tab_col{
+      display:block
+    }
+  }
   .diapo{
     position: relative;
     overflow: hidden;
@@ -410,4 +446,16 @@ justify-content: space-around;
 .element > img{
     width: 100%;
 }
-
+.icone{
+    width: 25px;
+    height:25px;
+}
+.bord_ico{
+  border:solid white 1px;
+  border-radius: 5px;
+  height:fit-content;
+  padding:3px;
+  justify-content: center;
+  align-items: center;
+  margin:5px;
+}
